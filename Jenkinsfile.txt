@@ -1,0 +1,35 @@
+pipeline {
+    
+     agent any
+     triggers {
+          pollSCM('* * * * *')
+     }
+     stages {
+     
+       
+
+         stage("Docker build") {
+               steps {
+                    bat "docker build -t kreddiva/appdevprojects:demo ." 
+               }
+         }
+
+         stage("Docker login") {
+               steps {
+                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker-hub-credentials',
+                               usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+                         bat "docker login --username $USERNAME --password $PASSWORD"
+                    }
+               }
+          }
+
+          stage("Docker push") {
+               steps {
+                    bat "docker push kreddiva/appdevprojects:demo"
+               }
+          }
+     
+           
+          
+    }
+}

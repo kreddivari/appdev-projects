@@ -1,0 +1,357 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RCC, Application Development Team Projects</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webdevlint">
+    <meta name="twitter:creator" content="@webdevlint">
+    <meta name="twitter:title" content="Gridlex">
+    <meta name="twitter:description" content="Just a Flexbox Grid System">
+    <meta name="twitter:image" content="http://gridlex.devlint.fr/demo/gridlex.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="icons/normalize.css">
+    <link rel="stylesheet" href="icons/gridlex.min.css">
+    <link rel="stylesheet" href="icons/demo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=NmElr6aKnG">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png?v=NmElr6aKnG">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png?v=NmElr6aKnG">
+    <link rel="manifest" href="icons/manifest.json?v=NmElr6aKnG">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg?v=NmElr6aKnG" color="#8cc84b">
+    <link rel="shortcut icon" href="icons/favicon.ico?v=NmElr6aKnG">
+    <meta name="apple-mobile-web-app-title" content="Gridlex">
+    <meta name="application-name" content="Gridlex">
+    <meta name="msapplication-config" content="icons/browserconfig.xml?v=NmElr6aKnG">
+    <meta name="theme-color" content="#8cc84b">
+    <style>
+	img{
+      max-height:300px;
+      max-width:400px;
+     }
+        .thecard {
+            box-shadow: 0 1px 30px rgba(0,0,0,.4);
+            background-color: #fff;
+            border-radius: 4px;
+            transition: 400ms ease;
+            text-align: left;
+        }
+        .thecard:hover{
+            box-shadow: 0 10px 50px rgba(0,0,0,.6);
+        }
+        .thecard:hover .card-outmore {
+            background: #2C3E50;
+            color: #fff;
+        }
+        .thecard a{
+            color: currentColor;
+            text-decoration: none;
+        }
+        .card-img {
+            display: block;
+            max-height: 395px;
+            overflow: hidden;
+        }
+        .card-img img {
+            display: block;
+            width:100%;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .card-caption {
+            position: relative;
+            padding: 5px 25px;
+        }
+        .card-caption h1 {
+            line-height: 1;
+        }
+
+        .card-outmore {
+            padding: 10px 25px;
+            border-radius: 0 0 4px 4px;
+            border-top: 1px solid #e0e0e0;
+            background: #efefef;
+            color: #222;
+            display: flex;
+            transition: 400ms ease;
+        }
+        .card-outmore h5 {
+            flex: 1;
+        }
+        .card-outmore i {
+            border:1px solid ;
+            padding: 1px 6px;
+            border-radius: 50%;
+        }
+
+        span.date { font-size: 10px; }
+
+        h5 { margin:0; }
+
+        .thecard .like-btn {
+            font-size: 18px;
+            background: #446CB3;
+            color: #fff;
+            padding: 13px 15px;
+            border-radius: 50em;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            box-shadow: 0 2px 1px rgba(0,0,0,.2);
+            transition: 400ms ease;
+        }
+        .card-img + .card-caption > .like-btn{
+            top: -22px;
+
+        }
+
+        .thecard .like-btn:hover {
+            background: #3B5998;
+            box-shadow: 0 4px 5px rgba(0,0,0,.3);
+        }
+		.header {
+    background-color: #800000;
+}
+    </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="demoPage grid">
+<nav class="header">
+        <div class="container">
+            <div class="navbar-header">
+               
+                    
+            <img src="icons/logo_rcc.png" alt="PCa Finder: Prostate Cancer Finder" class="img-responsive">
+
+    
+            </div>
+
+          <h3><b>AppDev Projects</b></h3>
+        </div>
+        
+   
+    
+    </nav>
+    <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://us-sankey.rcc.uchicago.edu/">
+                <img src="icons/sankey.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>Sankey</b></h1>
+                    <h3><b>U.S Energy History visualization</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://us-sankey.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+              
+            </a>
+        </div>
+    </div>
+    
+   <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://saga.rcc.uchicago.edu/index.html">
+                <img src="icons/saga.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>SAGA</b></h1>
+                    <h3><b>The Sign and Gesture Archive</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://saga.rcc.uchicago.edu/index.html">
+                <h5>Read more</h5>
+               
+            </a>
+        </div>
+    </div>
+	<div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href='https://pca-finder.rcc.uchicago.edu/entrySignIn'>
+                <img src="icons/pcafinder.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                    <h1 style="color:#800000"><b>Pca Finder</b></h1>
+                    
+                    <h3><b>Prostrate Cancer Findings</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href='https://pca-finder.rcc.uchicago.edu/entrySignIn'>
+                <h5>Read more</h5>
+              
+            </a>
+        </div>
+    </div>
+	<div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="http://businessofdebt.staging.rcc.uchicago.edu/">
+                <img src="icons/map.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   <h1 style="color:#800000"><b>Business of Debt</b></h1>
+                    
+                  
+                    <h3><b>U.S Energy History visualization</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="http://businessofdebt.staging.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+              
+            </a>
+        </div>
+    </div>
+  
+     <!--  <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="http://gis-dev.staging.rcc.uchicago.edu/">
+                <img src="icons/gis.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                   <h1 style="color:#800000"><b>RCC GIS</b></h1>
+                    <h3><b>U.S Energy History visualization</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="http://gis-dev.staging.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+               
+            </a>
+        </div>
+    </div>-->
+	
+	 <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://chapakhana.rcc.uchicago.edu/">
+                <img src="icons/chapakhana.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                   <h1 style="color:#800000"><b>CHAPAKHANA</b></h1>
+                    <h3><b>Mapping the Spread of Print in South Asia</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://chapakhana.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+               
+            </a>
+        </div>
+    </div>
+	 <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://1919map.rcc.uchicago.edu/">
+                <img src="icons/1919map.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>Chicago 1919</b></h1>
+                    <h3><b>Mapping the Chicago Riot 1919</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://1919map.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+              
+            </a>
+        </div>
+    </div>
+	 <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://vue.rcc.uchicago.edu/">
+                <img src="icons/vue.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>VUE</b></h1>
+                    <h3><b>Visualization for Understanding and Exploration</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://vue.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+               
+            </a>
+        </div>
+    </div>
+	 <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://learn-radiology.rcc.uchicago.edu/">
+                <img src="icons/radiology.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>Learn Radiology</b></h1>
+                    <h3><b>Learn from the best</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://learn-radiology.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+               
+            </a>
+        </div>
+    </div>
+	 <div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://cmd.rcc.uchicago.edu/">
+                <img src="icons/motiondb.png">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                   <h1 style="color:#800000"><b>Motion DB</b></h1>
+                    <h3><b>Chicago Motion Database</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://cmd.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+              
+            </a>
+        </div>
+    </div>
+	<div class="col-4_sm-12">
+        <div class="thecard">
+            <a class="card-img" href="https://mytardis-uchicago.rcc.uchicago.edu/">
+                <img src="icons/mytardis.jpg">
+            </a>
+            <div class="card-caption">
+                <a href="#like" class="like-btn fa fa-thumbs-o-up"></a>
+                <a href="#_">
+                   
+                    <h1 style="color:#800000"><b>MyTardis<b></h1>
+                    <h3><b>Access to your Midway</b></h3>
+                </a>
+            </div>
+            <a class="card-outmore" href="https://mytardis-uchicago.rcc.uchicago.edu/">
+                <h5>Read more</h5>
+                
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
